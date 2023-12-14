@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  
+  <display-name>Biding_System</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+ 
+ <servlet>
+ 	<servlet-name>CustomerSignUp</servlet-name>
+ 	<servlet-class>com.Customer.CustometInsert</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>CustomerSignUp</servlet-name>
+ 	<url-pattern>/insert</url-pattern>
+ </servlet-mapping>
+
+ <servlet>
+	<servlet-name>CustomerLogin</servlet-name>
+	<servlet-class>com.Customer.LoginServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+	<servlet-name>CustomerLogin</servlet-name>
+	<url-pattern>/log</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ 	<servlet-name>CustomerUpdate</servlet-name>
+ 	<servlet-class>com.Customer.CustomerUpdateServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>CustomerUpdate</servlet-name>
+ 	<url-pattern>/update</url-pattern>
+ </servlet-mapping>
+ 
+ <servlet>
+ 	<servlet-name>CustomerDelete</servlet-name>
+ 	<servlet-class>com.Customer.customerDeleteServlet</servlet-class>
+ </servlet>
+ <servlet-mapping>
+ 	<servlet-name>CustomerDelete</servlet-name>
+ 	<url-pattern>/cusDelete</url-pattern>
+ </servlet-mapping>
+ 
+ 
+ 
+ 
+ <servlet>
+		<servlet-name>item</servlet-name>
+		<servlet-class>Item.ItemServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>item</servlet-name>
+		<url-pattern>/itm_new</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>viewitem</servlet-name>
+		<servlet-class>Item.ItemServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>viewitem</servlet-name>
+		<url-pattern>/itm_list</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>insertitem</servlet-name>
+		<servlet-class>Item.ItemServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>insertitem</servlet-name>
+		<url-pattern>/itm_insert</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>deleteitem</servlet-name>
+		<servlet-class>Item.ItemServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>deleteitem</servlet-name>
+		<url-pattern>/itm_delete</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>edititem</servlet-name>
+		<servlet-class>Item.ItemServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>edititem</servlet-name>
+		<url-pattern>/itm_edit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updateitem</servlet-name>
+		<servlet-class>Item.ItemServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>updateitem</servlet-name>
+		<url-pattern>/itm_update</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	 <servlet>
+		<servlet-name>contact</servlet-name>
+		<servlet-class>cont.ContactServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>contact</servlet-name>
+		<url-pattern>/con_new</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>viewcontact</servlet-name>
+		<servlet-class>cont.ContactServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>viewcontact</servlet-name>
+		<url-pattern>/con_list</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>insertcontact</servlet-name>
+		<servlet-class>cont.ContactServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>insertcontact</servlet-name>
+		<url-pattern>/con_insert</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>deletecontact</servlet-name>
+		<servlet-class>cont.ContactServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>deletecontact</servlet-name>
+		<url-pattern>/con_delete</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>editcontact</servlet-name>
+		<servlet-class>cont.ContactServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>editcontact</servlet-name>
+		<url-pattern>/con_edit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>updatecontact</servlet-name>
+		<servlet-class>cont.ContactServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>updatecontact</servlet-name>
+		<url-pattern>/con_update</url-pattern>
+	</servlet-mapping>
+
+ </web-app>
